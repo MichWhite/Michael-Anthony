@@ -2,6 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <Navigation></Navigation>
   </div>
 </template>
 
@@ -9,12 +10,12 @@
 import Navigation from './components/Nav'
 
 export default {
-  name: 'App',
-  components: { 
-  'Navigation': Navigation
-}
+name: 'app',
+components: {
+    'Navigation': Navigation
+  }
+ }
 
-}
 </script>
 
 <style>
