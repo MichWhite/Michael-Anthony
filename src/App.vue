@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
-    <Navigation></Navigation>
+    <Navigation>Navigation</Navigation>
   </div>
 </template>
 
 <script>
-import Navigation from './components/Nav'
+import Navigation from './components/Nav';
+import { Carousel, Slide } from 'vue-carousel';
 
 export default {
 name: 'app',
 components: {
-    'Navigation': Navigation
+    'Navigation': Navigation,
+     Carousel,
+    Slide
+  
   }
  }
 
@@ -20,7 +23,7 @@ components: {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

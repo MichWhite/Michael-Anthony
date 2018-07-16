@@ -1,12 +1,20 @@
 <template>
-  <div>
-    <nav>
-      <router-link v-for="routes in links" 
+  <div class="navbar">
+ <nav>
+
+ <div class="jumbotron">
+ <h1>MICHAEL ANTHONY</h1></div>
+
+    <router-link v-for="routes in links" 
       v-bind:key="routes.id"
       :to="`${routes.page}`">{{routes.text}}</router-link>
+
     </nav>
+
+
   </div>
 </template>
+
 
 <script>
 export default {
@@ -26,6 +34,11 @@ export default {
         },
         {
           id: 2,
+          text: 'Articles',
+          page:'/Articles'
+        },
+        {
+          id: 3,
           text: 'Contact',
           page:'/Contact'
         }
@@ -36,17 +49,29 @@ export default {
 </script>
 
 <style> 
+h1{
+	  margin: 0 auto;
+	  text-align: left;
+}
+.navbar {
+font-family: "Garamodn", serif;
+margin-left: 10%;
+margin-right: 10%
+}
+
+
 nav {
-    background-color: #322F71;
+    background-color: #FFFFFF;
     overflow: hidden;
      position: fixed; 
     top: 0; 
     width: 100%;
+
 }
 
 nav a {
     float: left;
-    color: #f2f2f2;
+    color: #0000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
