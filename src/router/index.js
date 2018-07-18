@@ -27,7 +27,11 @@ export default new Router({
   name: 'About', 
   component: About 
 },
-
+{
+  path: '/articles', 
+  name: 'Articles', 
+  component: Articles 
+},
 {
   path: '/contact', 
   name: 'Contact', 

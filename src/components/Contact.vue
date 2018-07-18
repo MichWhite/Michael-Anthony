@@ -3,11 +3,12 @@
   
   
 
-  <v-container>
-  <h1>Contact Me</h1> 
+  <v-container elevation-5>
+
 
     <v-layout>
-
+  <h2>Contact Me</h2> 
+              <hr>
         <v-flex sm8>
       
   <p>
@@ -21,7 +22,7 @@
    
    Message <textarea rows="5"></textarea>
 </form>
-<button type="submit" class="btn btn-primary" onclick="sendMail()">Button Text</button>
+<button type="submit" class="btn btn-primary" onclick="sendMail()">Send Email</button>
 
 
   <v-layout>
@@ -32,11 +33,13 @@
   </v-flex>
 
 
-  <v-flex xsm4>
+  <v-flex xsm4 class="contact-info">
 
   <v-layout>
   <v-flex sm12>
  Facebook
+          
+
  <br>
 
 <a href="https://www.facebook.com/michael.anthony.1848">
@@ -88,3 +91,6 @@ function sendMail() {
 };
 </script>
 
+<style>
+
+</style>

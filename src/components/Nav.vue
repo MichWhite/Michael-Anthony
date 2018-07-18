@@ -1,16 +1,17 @@
 <template>
+  
   <div class="navbar">
  <nav>
 
+
+     
  <div class="jumbotron">
  <h1>MICHAEL ANTHONY</h1></div>
-
+ <hr>
     <router-link v-for="routes in links" 
       v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
-
+     :to="`${routes.page}`">{{routes.text}}</router-link>
     </nav>
-
 
   </div>
 </template>
@@ -49,14 +50,26 @@ export default {
 </script>
 
 <style> 
+
+
 h1{
+	padding: 1px;
 	  margin: 0 auto;
-	  text-align: left;
+	  text-align: centers;
+	  color: #2e86c1;
 }
 .navbar {
 font-family: "Garamodn", serif;
-margin-left: 10%;
-margin-right: 10%
+text-align:center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0.5em 0;
+    padding: 0; 
 }
 
 
@@ -66,21 +79,21 @@ nav {
      position: fixed; 
     top: 0; 
     width: 100%;
+    text-align:center;
 
 }
 
 nav a {
-    float: left;
-    color: #0000000;
+   // float: left;
+    color: grey;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    color:  #2e86c1;
 }
 
 nav a.active {
