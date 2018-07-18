@@ -30,5 +30,16 @@ components: {
   color: #2c3e50;
   margin-top: 80px;
 
+
+}
+
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+        background-attachment: fixed;
+ background-repeat: repeat;
+ background-image: url("assets/pattern.png");
 }
 </style>

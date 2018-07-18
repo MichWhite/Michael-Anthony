@@ -2,7 +2,7 @@
   <div id="container">
 
 
-  <v-container elevation-5>
+  <v-container elevation-20>
   <h2>About Me</h2> 
               <hr>
 
@@ -49,7 +49,7 @@
 </p>
 
 		<p>
-	I know that many people would be skeptical about his work.I'm not out to prove anything. I'm here to help. There's no other reason. I'm not a member of a cult or a religious freak. I'm just a spiritual person trying to do the right thing.
+	I know that many people would be skeptical about my work.I'm not out to prove anything. I'm here to help. There's no other reason. I'm not a member of a cult or a religious freak. I'm just a spiritual person trying to do the right thing.
 		</p>
 
 
@@ -64,8 +64,8 @@
 </v-container>
 
 
-
-  <v-container elevation-5>
+<br>
+  <v-container elevation-20>
   <h2>Anonymity</h2>
               <hr>
 
@@ -79,6 +79,7 @@
 </v-flex>
  </v-layout>
 </v-container>
+ <br>
 
   </div>
 </template>

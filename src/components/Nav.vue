@@ -5,7 +5,7 @@
 
 
      
- <div class="jumbotron">
+ <div class="jumbotron" style="font-size:15px">
  <h1>MICHAEL ANTHONY</h1></div>
  <hr>
     <router-link v-for="routes in links" 

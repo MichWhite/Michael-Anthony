@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-  <v-container elevation-5>
+  <v-container elevation-20>
 
     <v-layout>
 
@@ -15,8 +15,8 @@ I am the 7th son of a 7th son and as a natural born healer, the spirit world wor
 </v-flex>
  </v-layout>
 </v-container>
-
-  <v-container elevation-5>
+<br>
+  <v-container elevation-20>
 
     <v-layout>
 <v-carousel hide-delimiters hide-controls>
@@ -29,9 +29,9 @@ I am the 7th son of a 7th son and as a natural born healer, the spirit world wor
 
 </v-carousel> </v-layout>
 </v-container>
+<br>
 
-
-  <v-container elevation-5>
+  <v-container elevation-20>
 
     <v-layout>
 
@@ -53,11 +53,14 @@ I work with energy; I sense spirit, which is the essence of our loved ones that 
 My work as a Psychic Medium brings me to helping people to communicate with their loved ones on the other side, and also give them direction with their lives on earth.
 </p>
 
-
 </v-flex>
  </v-layout>
 </v-container>
+ <br>
   </div>
+
+
+
 </template>
 <style>
 p{
@@ -69,6 +72,15 @@ p{
   margin-right: 15%;
 }
 
+.container{
+  background-color:white;
+}
+h2{
+  padding: 1px;
+    margin: 0 auto;
+    text-align: centers;
+    color: #2e86c1;
+}
 </style>
 
 

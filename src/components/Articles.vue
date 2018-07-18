@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-  <v-container elevation-5>
+  <v-container elevation-20>
 
     <v-layout >
 
@@ -22,7 +22,7 @@ Coming home that night from Tramore — it must have been about one o’clock in
 </p>
 <p>
 
-<a href="https://www.wexfordpeople.ie/news/solving-mysteries-of-the-unexplained-27689647.html">Link to the full Interview</a>
+<a target="_blank" href="https://www.wexfordpeople.ie/news/solving-mysteries-of-the-unexplained-27689647.html">Link to the full Interview</a>
 </p>
 
 
@@ -36,7 +36,7 @@ I remember I was asked to cleanse one old farmhouse where there was spiritual ac
 I was able to tell him that the father of a farm worker who resided in the cottage had emigrated to America on a ship and when a bad storm blew up, he asked the captain to send a Morse code message for the son. The message never got through and during all the intervening years, the energy of the dead father was trying to get through to the son. I cleansed the house and the telephone calls stopped. 
 </p>
 <p>
-<a href="https://www.wexfordpeople.ie/news/solving-mysteries-of-the-unexplained-27689647.html">Link to the full Interview</a>
+<a target="_blank" href="https://www.wexfordpeople.ie/news/solving-mysteries-of-the-unexplained-27689647.html">Link to the full Interview</a>
 </p>
 
 
@@ -44,8 +44,8 @@ I was able to tell him that the father of a farm worker who resided in the cotta
 </v-flex>
  </v-layout>
   </v-container >
-
-  <v-container elevation-5>
+<br>
+  <v-container elevation-20>
 
     <v-layout >
 
@@ -70,6 +70,7 @@ Then we have the murderers, the paedophiles..... We have the bank managers, the 
 </v-flex>
  </v-layout>
 </v-container>
+ <br>
 
   </div>
 </template>

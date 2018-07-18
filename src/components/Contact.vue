@@ -3,26 +3,38 @@
   
   
 
-  <v-container elevation-5>
+  <v-container elevation-20>
 
-
-    <v-layout>
-  <h2>Contact Me</h2> 
+<h2>Contact Me</h2> 
               <hr>
+    <v-layout>
+  
         <v-flex sm8>
       
   <p>
-  I do not disclose his rates to the public. I have a fixed fee for psychic medium readings and for exorcisms, excluding mileage expenses. I can answer any queries and questions you might have on me or what I do. My preferred method of contact is via phone call or text message. Reach out to me and I will reply as soon as possible. Please feel free to contact me.
+  I do not disclose his rates to the public. I have a fixed fee for psychic medium readings and for exorcisms, excluding mileage expenses. I can answer any queries and questions you might have on me or what I do. My preferred method of contact is via phone call or text message. Reach out to me and I will reply as soon as possible. Please feel free to contact me. (sometimes your email may go to Spam so if I do not reply please call or text me instead, Thank You)
   </p>
+
+
    <form> 
-   Full Name
-    <input type="text" id="name" name="name" >
+   Full Name:
+    <input style="border-style: solid; margin-left: 7%; margin-right:7%" type="text" id="name" name="name" >
  
- Email Address   <input type="email" id="email" name="email">
+ Email Address:   
+
+ <input  style="border-style: solid; margin-left: 7%; margin-right:7%" type="email" id="email" name="email">
    
-   Message <textarea rows="5"></textarea>
-</form>
-<button type="submit" class="btn btn-primary" onclick="sendMail()">Send Email</button>
+<v-flex sm12>
+   Message
+  
+<p style="white-space: pre-line; ">{{ message }}</p>
+<textarea style="border-style: solid; width: 100%;" v-model="message"></textarea>
+ </v-flex>
+ </form>
+   <div>
+        <v-btn onclick="sendMail()" type="submit" color="lightblue">Send Email</v-btn>
+</div>
+
 
 
   <v-layout>
@@ -38,11 +50,11 @@
   <v-layout>
   <v-flex sm12>
  Facebook
-          
+
 
  <br>
 
-<a href="https://www.facebook.com/michael.anthony.1848">
+<a target="_blank" href="https://www.facebook.com/michael.anthony.1848">
   <img src="../assets/facebook-logo.png"  alt="Facebook" style="width:42px;height:42px;border:0;">
 </a>
 
@@ -67,7 +79,7 @@ Phone Number
   <br>
 Email Address
 <br>
-  <a href="mlan@live.ie">mlan@live.ie</a> 
+  <a href="mailto:mlan@live.ie?Subject=Work" target="_top">mlan@live.ie</a> 
 
   </v-flex>
 </v-layout>
@@ -75,6 +87,7 @@ Email Address
 </v-flex>
  </v-layout>
 </v-container>
+ <br>
 
   </div>
 </template>
@@ -83,12 +96,7 @@ export default {
   name: 'Contact' //this is the name of the component
 }
 
-function sendMail() {
-    var name = $('#contact #name').val();
-    var email = $('#contact #email').val();
-    var message = $('#contact textarea').val();
-    window.location.href = 'mailto:mich.white@hotmail.com?subject=The subject - ' + name + ' (' + email + ')' + '&body=' + message;
-};
+
 </script>
 
 <style>
