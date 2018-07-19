@@ -1,4 +1,6 @@
+
 <template>
+
   <div id="container">
   
   
@@ -16,24 +18,23 @@
   </p>
 
 
-   <form> 
-   Full Name:
-    <input style="border-style: solid; margin-left: 7%; margin-right:7%" type="text" id="name" name="name" >
- 
- Email Address:   
+<div id="contact-form" class="contact-form">
+  <div class="separator"></div>
 
- <input  style="border-style: solid; margin-left: 7%; margin-right:7%" type="email" id="email" name="email">
-   
-<v-flex sm12>
-   Message
-  
-<p style="white-space: pre-line; ">{{ message }}</p>
-<textarea style="border-style: solid; width: 100%;" v-model="message"></textarea>
- </v-flex>
- </form>
-   <div>
-        <v-btn onclick="sendMail()" type="submit" color="lightblue">Send Email</v-btn>
+  <div v-if="isSending" class="loading">Sendig...</div>
+
+  <form class="form" action="mailto:mich.white@hotmail.com" method="post" enctype="text/plain">
+    <input v-model='name' placeholder="Name" type="text" autocomplete="off">
+    <input v-model="email" placeholder="E-mail" type="email" autocomplete="off">
+    <textarea v-model="message" rows="4" placeholder="Message"></textarea>
+    <button class="button">Send</button>
+  </form>
 </div>
+
+
+
+
+    
 
 
 
@@ -91,14 +92,101 @@ Email Address
 
   </div>
 </template>
+
+<style>
+
+.contact-form {
+  font-family: 16px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-form .separator {
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 15px;
+}
+
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.contact-form_title {
+  color: #333;
+  text-align: left;
+  font-size: 28px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea {
+  border: solid 1px #e8e8e8;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 7px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .button {
+  background: #2e86c1;
+  border: solid 1px black;
+  color: white;
+  cursor: pointer;
+  padding: 10px 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-form .button:hover {
+  background: blue;
+  border: solid 1px black;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form .button {
+  font-size: 15px;
+  border-radius: 3px
+}
+</style>
+
+
 <script>
 export default {
-  name: 'Contact' //this is the name of the component
+  name: 'Contact',
+
+  data: {
+    contact: {
+      name: '',
+      email: '',
+      message: '',
+    },
+
+    isSending: false
+  },
+
+  methods: {
+
+    /**
+     * Clear the form
+     */ 
+    clearForm() {
+      for (let field in this.contact) {
+        this.contact[field] = ''
+      }
+    },
+
+  
+  }
+
 }
 
 
 </script>
-
-<style>
-
-</style>

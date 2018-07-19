@@ -62,26 +62,7 @@ My work as a Psychic Medium brings me to helping people to communicate with thei
 
 
 </template>
-<style>
-p{
-  text-align:left;
-}
 
-#container{
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.container{
-  background-color:white;
-}
-h2{
-  padding: 1px;
-    margin: 0 auto;
-    text-align: centers;
-    color: #2e86c1;
-}
-</style>
 
 
 <script>

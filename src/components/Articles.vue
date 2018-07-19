@@ -1,5 +1,6 @@
 <template>
   <div id="container">
+  
   <v-container elevation-20>
 
     <v-layout >
@@ -63,12 +64,13 @@ I had a lady here last week and her husband came to her almost straight away whe
 He didn’t cross over yet because he still wanted to go to Bundoran with her for a spin in the new car. He was there for that reason.
 </p>
 <p>
-Then we have the murderers, the paedophiles..... We have the bank managers, the politicians, the schoolteachers, lay people who didn’t live a life as they should have, and, of course, they go into the ghost world.
+Then we have the murderers, the paedophiles and people who didn’t live a life as they should have, and, of course, they go into the ghost world.
 </p>
 
 
 </v-flex>
  </v-layout>
+
 </v-container>
  <br>
 

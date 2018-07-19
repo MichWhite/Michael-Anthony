@@ -1,3 +1,4 @@
+
 <template>
   <div id="app">
     <router-view/>
@@ -19,6 +20,7 @@ components: {
   }
  }
 
+
 </script>
 
 <style>
@@ -29,11 +31,26 @@ components: {
   text-align: center;
   color: #2c3e50;
   margin-top: 80px;
+}
+p{
+  padding:10px;
+}
 
-
+.container{
+  background-color:white;
+}
+p{
+  text-align:left;
 }
 
 
+
+h2{
+  padding: 1px;
+    margin: 0 auto;
+    text-align: centers;
+    color: #2e86c1;
+}
 html, body
 {
     width: 100%;
@@ -42,4 +59,6 @@ html, body
  background-repeat: repeat;
  background-image: url("assets/pattern.png");
 }
+
+
 </style>

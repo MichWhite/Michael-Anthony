@@ -12,7 +12,7 @@
         <v-layout>
         <v-flex sm3>
    
-     <img src="../assets/Michael-Anthony.jpg"  alt="Michael Anthony" style="width:150px;height:150px;border:0;">
+     <img class="profile-image" src="../assets/Michael-Anthony.jpg"  alt="Michael Anthony" style="width:150px;height:150px;border:0;padding: 10px;">
      </v-flex>
 
      <v-flex sm7>
@@ -88,4 +88,4 @@
 export default {
   name: 'About' //this is the name of the component
 }
-</script>
+</script>s
