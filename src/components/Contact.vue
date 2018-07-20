@@ -23,11 +23,50 @@
 
   <div v-if="isSending" class="loading">Sendig...</div>
 
-  <form class="form" action="mailto:mich.white@hotmail.com" method="post" enctype="text/plain">
+  <form class="form" action="mailto:mlan@live.ie" method="post" enctype="text/plain">
     <input v-model='name' placeholder="Name" type="text" autocomplete="off">
     <input v-model="email" placeholder="E-mail" type="email" autocomplete="off">
     <textarea v-model="message" rows="4" placeholder="Message"></textarea>
-    <button class="button">Send</button>
+       <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+
+        <button class="button"
+          slot="activator"
+          dark>
+
+          SEND
+
+        </button>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           Thank You For Your Email
+          </v-card-title>
+  
+          <v-card-text>
+          I will reply as soon as I can.
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+
+            <v-btn
+              color="primary"
+              flat
+              @click="dialog = false"
+            >
+            Ok
+           </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
   </form>
 </div>
 
@@ -161,32 +200,13 @@ Email Address
 <script>
 export default {
   name: 'Contact',
-
-  data: {
-    contact: {
-      name: '',
-      email: '',
-      message: '',
-    },
-
-    isSending: false
-  },
-
-  methods: {
-
-    /**
-     * Clear the form
-     */ 
-    clearForm() {
-      for (let field in this.contact) {
-        this.contact[field] = ''
-      }
-    },
-
+data(){
+    return {
+      dialog: false
+    }
   
-  }
+
 
 }
-
-
+}
 </script>

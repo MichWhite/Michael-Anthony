@@ -71,7 +71,11 @@ export default {
        
        data () {
       return {
-        items: [
+        items: [ {
+            src: require('../assets/meditation.jpg')
+
+          },
+
             {
             src: require('../assets/hill-top.jpeg')
           },
@@ -83,12 +87,9 @@ export default {
           {
             src: require('../assets/mohamed-nohassi.jpg')
 
-          },
-         
-          {
-            src: require('../assets/pexels-photo.jpeg')
-
           }
+         
+         
         ]
       }
     }

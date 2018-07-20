@@ -8,14 +8,14 @@
 
     <v-layout>
 
-        <v-flex sm12>
-        <v-layout>
-        <v-flex sm3>
-   
-     <img class="profile-image" src="../assets/Michael-Anthony.jpg"  alt="Michael Anthony" style="width:150px;height:150px;border:0;padding: 10px;">
-     </v-flex>
+     <v-flex sm12>  
+     <img class="profile-image" src="../assets/Michael-Anthony.jpg"  alt="Michael Anthony" style="width:150px;height:150px;
+     padding: 5px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;">
 
-     <v-flex sm7>
+
 	<p>
     I am the seventh son of a seventh son. I work as a healer and psychic medium based near Hook Head peninsula in Co Wexford where I was born. I have been tuned into the spirit world since as long as I can remember.
 
@@ -23,9 +23,8 @@
 
 	Some are a lot more difficult than others because they have more energy. They try to instil fear in me and try to put me off but I have this determination. I know who I am and I'm at one with myself. I'm just a spiritual person trying to do the right thing.
     </p> 
-    </v-flex>
 
-    <v-flex sm7>
+
 
 	<p>
 	I grew up in South Wexford and immigrated to England where I lived for 20 years before returning to live locally.
